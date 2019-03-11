@@ -1,6 +1,7 @@
 # Terraform AWS Snippets - Infrastructure as Code 💪
 
-Didn't know what is Terraform? [Take a look](https://www.terraform.io).
+Didn't know what is Terraform? [Take a look](https://www.terraform.io)
+
 For sure you already know what is AWS 😉
 
 ## Install terraform
