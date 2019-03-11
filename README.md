@@ -1,4 +1,4 @@
-# Terraform AWS Snippets
+# Terraform AWS Snippets - Infrastructure as Code 💪
 
 ## Install terraform
 
@@ -17,23 +17,24 @@ and then run
 source .profile
 ```
 
+## Configure your credentials
+
+Create a file named `provider.tf` with the following content
+
+```
+provider "aws" {
+  access_key = "YOUR_ACCESS_KEY" 
+  secret_key = "YOUR_SECRET_KEY"
+  region  = "eu-west-1"
+}
+```
+
 ## Install plugins
 
 ```bash
 terraform init
 ```
 
-## Configure your credentials
-
-Create a file named `provider.tf` with the following content
-
-```ruby
-provider "aws" {
-  access_key = "YOUR_ACCESS_KEY"
-  secret_key = "YOUR_SECRET_KEY"
-  region  = "eu-west-1"
-}
-```
 
 ## Scripts
 
