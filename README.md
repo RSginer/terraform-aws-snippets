@@ -23,6 +23,18 @@ source .profile
 terraform init
 ```
 
+## Configure your credentials
+
+Create a file named `provider.tf` with the following content
+
+```ruby
+provider "aws" {
+  access_key = "YOUR_ACCESS_KEY"
+  secret_key = "YOUR_SECRET_KEY"
+  region  = "eu-west-1"
+}
+```
+
 ## Scripts
 
 Show the plan
