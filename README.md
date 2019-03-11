@@ -11,6 +11,11 @@ Or add your terraform path inside `.profile`
 ```bash
 export PATH = $PATH/your/terraform/path
 ```
+and then run
+
+```bash
+source .profile
+```
 
 ## Install plugins
 
