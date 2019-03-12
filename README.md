@@ -50,3 +50,9 @@ Apply plan
 ```
 terraform apply
 ```
+
+Passing variables
+
+```bash
+terraform plan -var region='eu-west-1'
+```
