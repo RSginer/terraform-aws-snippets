@@ -1,5 +1,5 @@
 variable "amitype" {
-  default = "ami-922914f7"
+  default = "ami-08d658f84a6d84a80" // Ubuntu Server 18.04 LTS (HVM) SSD 64-bit x86
 }
 
 variable "env" {
