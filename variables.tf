@@ -1,0 +1,8 @@
+variable "amitype" {
+  
+}
+
+variable "instancesName" {
+
+}
+

@@ -6,10 +6,11 @@
 # }
 
 resource "aws_instance" "firstdemo" {
-  ami  = "ami-922914f7"
+  count = 3
+  ami  = "${var.amitype}"
   instance_type = "t2.micro"
 
   tags {
-    Name = "demoinstance" 
+    Name = "${var.instancesName}-${count.index}" 
   }
 }
