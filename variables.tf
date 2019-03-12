@@ -6,6 +6,7 @@ variable "env" {
 }
 
 variable "instancesName" {
+  type = "map"
   default = {
     dev = "terraformDemoInstance-dev"
     release = "terraformDemoInstance-release"
