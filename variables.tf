@@ -2,8 +2,15 @@ variable "amitype" {
   default = "ami-922914f7"
 }
 
+variable "env" {
+}
+
 variable "instancesName" {
-  default = "terraformDemoInstance"
+  default = {
+    dev = "terraformDemoInstance-dev"
+    release = "terraformDemoInstance-release"
+    prod = "terraformDemoInstance-prod"
+  }
 }
 
 variable "securityGroup" {

@@ -11,6 +11,6 @@ resource "aws_instance" "firstdemo" {
   instance_type = "t2.micro"
 
   tags {
-    Name = "${var.instancesName}-${count.index}" 
+    Name = "${lookup(var.instancesName, var.env)}-${count.index}" 
   }
 }
