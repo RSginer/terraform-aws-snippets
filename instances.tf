@@ -7,7 +7,7 @@
 
 resource "aws_instance" "firstdemo" {
   count = 3
-  ami  = "${var.amitype}"
+  ami  = "${var.amitype}" // ami-922914f7 by default
   instance_type = "t2.micro"
 
   tags {
